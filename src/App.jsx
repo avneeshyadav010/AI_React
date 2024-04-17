@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <img src='https://relaxed-lolly-ba2f91.netlify.app/src/assets/BG.jpg' className='header' alt="Header-image" />
+      <img src='https://voice-controlled-ai-news-1212.netlify.app/src/assets/BG.jpg' className='header' alt="Header-image" />
       <div className='BG'>
         <div className="header_cards">
         <div className="card card_margin" style={{ width: "23rem", height: "10rem", padding: "0" }}>
