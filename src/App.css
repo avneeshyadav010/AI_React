@@ -1,0 +1,55 @@
+#root {
+  text-align: center;
+}
+.text_color {
+  color: aliceblue;
+}
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.cards {
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card_margin {
+  margin: 10px;
+}
+.card_h {
+  font-size: 14px;
+  margin-top: 0.25rem;
+}
+.card_p {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0;
+}
+.header {
+  width: 35rem;
+  height: 15rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    width: 16rem;
+    height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.header_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
