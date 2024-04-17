@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <img src='https://voice-controlled-ai-news-1212.netlify.app/src/assets/BG.jpg' className='header' alt="Header-image" />
+    <div className='main-container '>
+    <img src='https://media.istockphoto.com/id/1579762135/photo/ai-machine-learning-language-robotic-hand-and-human-touch-global-virtual-represents-the.jpg?s=1024x1024&w=is&k=20&c=xgzt0y8VmdcVvWTFAMWgO5uediAFBdUlDRSMSjQxmfw=' className='header' alt="Header-image" />
       <div className='BG'>
         <div className="header_cards">
         <div className="card card_margin" style={{ width: "23rem", height: "10rem", padding: "0" }}>
@@ -39,6 +40,8 @@ function App() {
         </div>
         <Dictaphone />
       </div>
+    </div>
+      
     </>
   )
 }

@@ -53,3 +53,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.main-container {
+  background-image: url('https://media.istockphoto.com/id/1130152320/photo/artificial-intelligence.jpg?s=1024x1024&w=is&k=20&c=LbAtL0YxE3wZnK9HHbAU2W4mFz8oCEvnOlw_2fXm73I=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

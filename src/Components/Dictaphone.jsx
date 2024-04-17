@@ -40,7 +40,7 @@ const Dictaphone = () => {
             .then(data => {
               setSource(data.articles)
               speak({ text: `Here are the ${source}` })
-              speak({ text: "would you like me to read the headline. Please say yes or no" })
+              speak({ text: "say yes to read headlin else say no" })
             })
             .catch((error) => {
               console.log(error.message);
@@ -65,7 +65,7 @@ const Dictaphone = () => {
             .then(data => {
               setCategory(data.articles)
               speak({ text: `Here are ${category}` })
-              speak({ text: "would you like me to read the headline. Please say yes or no" })
+              speak({ text: "say yes to read headlin else say no" })
             })
             .catch((error) => {
               console.log(error.message);
@@ -85,7 +85,7 @@ const Dictaphone = () => {
           .then(data => {
             setLatest(data.sources);
             speak({ text: `Here are latest news` })
-            speak({ text: "would you like me to read the headline. Please say yes or no" })
+            speak({ text: "say yes to read headlin else say no" })
           })
           .catch((error) => {
             console.log(error.message);
@@ -144,11 +144,11 @@ const Dictaphone = () => {
   return (
     <div>
       <p className="text_color">Microphone: {listening ? "on" : "off"}</p>
+      <p className="text_color">{transcript}</p>
+      <p className="text_color">{message}</p>
       <button onClick={() => SpeechRecognition.startListening({ continuous: true })}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
-      <p className="text_color">{transcript}</p>
-      <p className="text_color">{message}</p>
       <div className="cards">
         {source.length > 0 && source.map((item, index) => <News key={index} data={item} />)}
         {category.length > 0 && category.map((item, index) => <News key={index} data={item} />)}
